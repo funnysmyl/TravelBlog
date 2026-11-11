@@ -1,0 +1,64 @@
+/* --- HAUPT-LAYOUT MIT KLASSEN --- */
+
+
+/* --- HIGHLIGHTS --- */
+
+/* --- FAQ --- */
+
+/* --- CONTACT FORM --- */
+
+figure {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    /* width: 1100px;
+    height: 62px; */
+}
+
+figure > img {
+    width: 30px;       /*36px Desktop*/
+    height: 34.29px;   /*41.15px Desktop*/
+}
+
+.contact-header > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 5%;
+}
+
+.policy-checkbox {
+    font-size: 15px;
+}
+
+.policy-checkbox > span {
+    margin: 2px;
+    color: #4EA487;
+}
+
+.policy-checkbox > span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+label {
+    font-family: Arima;
+    color: #54370D;
+    font-size: 24px;
+}
+
+input {
+    margin: 17px;
+}
+
+
+/* --- FOOTER --- */

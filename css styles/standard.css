@@ -1,0 +1,34 @@
+
+/* --- GLOBALE FUNDAMENT --- */
+/* --- SCHRIFTARTEN & GRÖßEN --- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    /* outline: 1px solid red; /*um Ausrichtung der Elemente zu überprüfen*/
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h2 {
+    font-family: Arima;
+    color:#4EA487;
+    font-size: 40px;  /*52px Desktop*/
+}
+
+p {
+    font-size: 16px;
+    font-family: Arima;
+    color: #54370D;
+}
+
+button {
+    font-family: Arima;
+    font-size: 24px;
+    border-radius: 40px;
+    width: 139px;           /*158px Desktop*/
+    height: 48px;           /*auch 48px Desktop*/
+    text-align: center;
+}
