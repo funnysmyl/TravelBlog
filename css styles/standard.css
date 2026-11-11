@@ -32,3 +32,8 @@ button {
     height: 48px;           /*auch 48px Desktop*/
     text-align: center;
 }
+
+button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
