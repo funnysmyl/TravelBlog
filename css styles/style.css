@@ -1,7 +1,61 @@
 /* --- HAUPT-LAYOUT MIT KLASSEN --- */
 
 
+/* Header */
+
+.header-section{
+    background-color:#4EA487;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 140px;
+
+    width: 100%;
+}
+
+
+.nav-bar{
+    display: flex;
+    gap: 72px;
+    align-items: center;
+    text-align: center;
+}
+
+
+.nav-bar img{
+    width: 72px;
+    height: 72px;
+}
+
+.nav-bar > a{
+    color: rgba(248, 245, 235, 1);
+    font-family: Arima;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    
+}
+
+/* --- YELLOW BOX --- */
+
+.cappadocia-section{
+    display: flex;
+    justify-content: center;
+
+}
+
+.yellow-box{
+    background-color: rgba(241, 201, 83, 1);
+    height: 500px;
+    width: 100%;
+}
+
 /* --- HIGHLIGHTS --- */
+
+
 
 /* --- FAQ --- */
 
@@ -62,3 +116,31 @@ input {
 
 
 /* --- FOOTER --- */
+
+footer{
+    background-color: #4EA487;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 60px 120px;
+}
+
+.info-links{
+    display: flex;
+    align-items: center;
+    gap: 72px;
+}
+
+.info-links a{
+    color: #FFFFFF;
+    font-family: Palanquin;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.social-media{
+    display: flex;
+    gap: 16px;
+}
+
