@@ -34,14 +34,28 @@ form > div {
     flex-direction: column;
     justify-content: flex-start;
     padding-left: 5%;
+    padding-right: 5%;
 }
 
 .policy-checkbox {
     font-size: 15px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.policy-checkbox > input[type="checkbox"] {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    margin: 2px 0 0 0;
+    border: 2px solid #54370D;
+    border-radius: 2px;
+    cursor: pointer;
 }
 
 .policy-checkbox > span {
-    margin: 2px;
+    margin: 0;
     color: #4EA487;
 }
 
@@ -54,10 +68,30 @@ label {
     font-family: Arima;
     color: #54370D;
     font-size: 24px;
+    margin-bottom: 5px;
+    margin-top: 20px;
 }
 
 input {
+    border: none;
+    border-bottom: 2px solid;
+    height: 29px;              /* acuh 29px Desktop*/
     margin-top: 17px;
+    margin-bottom: 17px;
+}
+
+input:focus {
+    outline: none;             /* kein blauer Rahmen beim Klicken */
+    border-bottom-width: 2px;
+}
+
+form button {
+    align-self: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: white;
+    border: 1px solid #8C8C8C;
+    color: #707070;
 }
 
 

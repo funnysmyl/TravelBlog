@@ -27,6 +27,7 @@ p {
 button {
     font-family: Arima;
     font-size: 24px;
+    font-weight: bold;
     border-radius: 40px;
     width: 139px;           /*158px Desktop*/
     height: 48px;           /*auch 48px Desktop*/
