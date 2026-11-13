@@ -3,8 +3,8 @@
 
 /* Header */
 
-.header-section{
-    background-color:#4EA487;
+.header-section {
+    background-color: #4EA487;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -17,7 +17,7 @@
 }
 
 
-.nav-bar{
+.nav-bar {
     display: flex;
     gap: 72px;
     align-items: center;
@@ -25,57 +25,74 @@
 }
 
 
-.nav-bar img{
+.nav-bar img {
     width: 72px;
     height: 72px;
 }
 
-.nav-bar > a{
+.nav-bar>a {
     color: rgba(248, 245, 235, 1);
     font-family: Arima;
     font-size: 1.5rem;
     font-weight: 700;
     text-decoration: none;
-    
+
 }
 
 /* --- YELLOW BOX --- */
 
-.cappadocia-section{
+.cappadocia-section {
     display: flex;
     align-items: flex-start;
-    justify-content: center;
-    height: 100dvh;
-        background-image: url(/assets/img/yellow-box/yellow-box-photo.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-    
-    
+    justify-content: left;
+    height: 1440px;
+    background-image: url(/assets/img/yellow-box/yellow-box-photo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 
 .yellow-box{
+     background-image: url(/assets/img/yellow-box/Vector\ 16.png);
+     background-position: left;
+     background-repeat: no-repeat;
+     background-size: contain;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: left;
     text-align: left;
-    background-image: url(/assets/img/yellow-box/Vector\ 16.png);
-    background-repeat: no-repeat; 
-    background-position: left;
-    background-size: cover;
-    height: 550px;
-    width: 1440px;
-    padding-top: 130px;
-    padding-left: 240px;
+    width: 550px;
+    height: 400px;
 }
 
-.yellow-box  h3{
+
+.yellow-box h3 {
     font-family: 'Arima';
 }
 
-.yellow-box  p{
+.yellow-box p {
     font-family: 'Palanquin';
 }
 
+.flag-circle{
+    display: flex;
+    align-items: center;
+
+}
+
+.flag-circle p{
+    background-color: #4EA487;
+    border-radius: 100%;
+    font-size: 1.5rem;
+}
+
+.flag-circle img{
+    border: #4EA487 solid 20px;
+    border-radius: 100%;
+    border-width: 4px;
+    height: 40px;
+    width: 40px;
+}
 /* --- HIGHLIGHTS --- */
 
 
@@ -94,19 +111,21 @@ figure {
     height: 62px; */
 }
 
-figure > img {
-    width: 30px;       /*36px Desktop*/
-    height: 34.29px;   /*41.15px Desktop*/
+figure>img {
+    width: 30px;
+    /*36px Desktop*/
+    height: 34.29px;
+    /*41.15px Desktop*/
 }
 
-.contact-header > div {
+.contact-header>div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-form > div {
+form>div {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -121,7 +140,7 @@ form > div {
     gap: 12px;
 }
 
-.policy-checkbox > input[type="checkbox"] {
+.policy-checkbox>input[type="checkbox"] {
     flex-shrink: 0;
     width: 18px;
     height: 18px;
@@ -131,12 +150,12 @@ form > div {
     cursor: pointer;
 }
 
-.policy-checkbox > span {
+.policy-checkbox>span {
     margin: 0;
     color: #4EA487;
 }
 
-.policy-checkbox > span:hover {
+.policy-checkbox>span:hover {
     text-decoration: underline;
     cursor: pointer;
 }
@@ -152,13 +171,15 @@ label {
 input {
     border: none;
     border-bottom: 2px solid;
-    height: 29px;              /* acuh 29px Desktop*/
+    height: 29px;
+    /* acuh 29px Desktop*/
     margin-top: 17px;
     margin-bottom: 17px;
 }
 
 input:focus {
-    outline: none;             /* kein blauer Rahmen beim Klicken */
+    outline: none;
+    /* kein blauer Rahmen beim Klicken */
     border-bottom-width: 2px;
 }
 
@@ -174,7 +195,7 @@ form button {
 
 /* --- FOOTER --- */
 
-footer{
+footer {
     background-color: #4EA487;
     display: flex;
     justify-content: space-between;
@@ -183,21 +204,20 @@ footer{
     padding: 60px 120px;
 }
 
-.info-links{
+.info-links {
     display: flex;
     align-items: center;
     gap: 72px;
 }
 
-.info-links a{
+.info-links a {
     color: #FFFFFF;
     font-family: Palanquin;
     font-size: 18px;
     text-decoration: none;
 }
 
-.social-media{
+.social-media {
     display: flex;
     gap: 16px;
 }
-
