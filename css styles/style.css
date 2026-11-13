@@ -43,14 +43,37 @@
 
 .cappadocia-section{
     display: flex;
+    align-items: flex-start;
     justify-content: center;
-
+    height: 100dvh;
+        background-image: url(/assets/img/yellow-box/yellow-box-photo.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    
+    
 }
 
+
 .yellow-box{
-    background-color: rgba(241, 201, 83, 1);
-    height: 500px;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    background-image: url(/assets/img/yellow-box/Vector\ 16.png);
+    background-repeat: no-repeat; 
+    background-position: left;
+    background-size: cover;
+    height: 550px;
+    width: 1440px;
+    padding-top: 130px;
+    padding-left: 240px;
+}
+
+.yellow-box  h3{
+    font-family: 'Arima';
+}
+
+.yellow-box  p{
+    font-family: 'Palanquin';
 }
 
 /* --- HIGHLIGHTS --- */
