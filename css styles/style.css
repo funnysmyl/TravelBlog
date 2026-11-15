@@ -44,54 +44,62 @@
 .cappadocia-section {
     display: flex;
     align-items: flex-start;
-    justify-content: left;
-    height: 1440px;
-    background-image: url(/assets/img/yellow-box/yellow-box-photo.png);
+    height: 650px;
+    background-image: url(./assets/img/yellow-box/yellow-box-photo.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 
 .yellow-box{
-     background-image: url(/assets/img/yellow-box/Vector\ 16.png);
-     background-position: left;
-     background-repeat: no-repeat;
-     background-size: contain;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    text-align: left;
-    width: 550px;
-    height: 400px;
+    background-color: rgba(0, 255, 34, 0.695);
+    position: relative;
+
 }
 
 
-.yellow-box h3 {
+.yellow-box img{
+    
+border: solid 1px red;
+}
+
+.yellow-text{
+    background-color: blue;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+  
+}
+
+.yellow-text h3 {
+    color: #54370D;
     font-family: 'Arima';
+    font-weight: 700;
+    font-size: 3.75rem;
 }
 
-.yellow-box p {
+.yellow-text p {
+    color: #54370D;
     font-family: 'Palanquin';
-}
-
-.flag-circle{
-    display: flex;
-    align-items: center;
-
-}
-
-.flag-circle p{
-    background-color: #4EA487;
-    border-radius: 100%;
     font-size: 1.5rem;
 }
 
+.flag-circle{
+    position: absolute;
+    top: 47%;
+    left: 36%;
+   
+   
+    display: flex;
+    align-items: center;
+}
+
 .flag-circle img{
-    border: #4EA487 solid 20px;
-    border-radius: 100%;
-    border-width: 4px;
+    clip-path: circle(50% 50%);
+    shape-outside: circle(50%);
     height: 40px;
     width: 40px;
+    
 }
 /* --- HIGHLIGHTS --- */
 
