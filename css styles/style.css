@@ -40,6 +40,8 @@
 }
 
 /* --- YELLOW BOX --- */
+/* MIND THE GAP */
+/* UNDER HEAVY SVG CONSTRUCTION */
 
 .cappadocia-section {
     display: flex;
@@ -85,6 +87,7 @@ border: solid 1px red;
 }
 
 .flag-circle{
+    background-color: yellow;
     position: absolute;
     top: 47%;
     left: 36%;
@@ -94,13 +97,20 @@ border: solid 1px red;
     align-items: center;
 }
 
+.flag-circle svg{
+    position: relative;
+
+}
+
 .flag-circle img{
-    clip-path: circle(50% 50%);
-    shape-outside: circle(50%);
+    position: relative;
     height: 40px;
     width: 40px;
     
 }
+
+
+
 /* --- HIGHLIGHTS --- */
 
 
