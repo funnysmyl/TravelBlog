@@ -38,14 +38,40 @@
 /* --- YELLOW BOX --- */
 
 .cappadocia-section {
+  background-image: url(/assets/img/yellow-box/header-photo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
-  justify-content: center;
+  justify-content: start
 }
 
 .yellow-box {
-  background-color: rgba(241, 201, 83, 1);
-  height: 500px;
-  width: 100%;
+text-align: start;
+position: relative;
+}
+
+.yellow-box img{
+  display: flex;
+}
+
+.yellow-text{
+  position: relative;
+  bottom: 55%;
+  left: 15%;
+} 
+
+.yellow-text h3{
+  color: #54370D;
+  font-family: 'Arima';
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+
+.yellow-text p{
+  color: #54370D;
+  font-family: 'palanquin';
+  font-weight: 500;
+  font-size: 1.75;
 }
 
 /* --- HIGHLIGHTS --- */
@@ -195,6 +221,7 @@ form > div {
   justify-content: flex-start;
   padding-left: 5%;
   padding-right: 5%;
+}
 figure>img {
     width: 30px;
     /*36px Desktop*/
@@ -242,6 +269,7 @@ form>div {
 .policy-checkbox > span:hover {
   text-decoration: underline;
   cursor: pointer;
+}
 .policy-checkbox>input[type="checkbox"] {
     flex-shrink: 0;
     width: 18px;
