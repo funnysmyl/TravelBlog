@@ -1,134 +1,200 @@
 /* --- HAUPT-LAYOUT MIT KLASSEN --- */
 
-
 /* Header */
 
 .header-section {
-    background-color: #4EA487;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 100px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 140px;
+  background-color: #4ea487;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 140px;
 
-    width: 100%;
+  width: 100%;
 }
-
 
 .nav-bar {
-    display: flex;
-    gap: 72px;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  gap: 72px;
+  align-items: center;
+  text-align: center;
 }
-
 
 .nav-bar img {
-    width: 72px;
-    height: 72px;
+  width: 72px;
+  height: 72px;
 }
 
-.nav-bar>a {
-    color: rgba(248, 245, 235, 1);
-    font-family: Arima;
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-decoration: none;
-
+.nav-bar > a {
+  color: rgba(248, 245, 235, 1);
+  font-family: Arima;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 /* --- YELLOW BOX --- */
-/* MIND THE GAP */
-/* UNDER HEAVY SVG CONSTRUCTION */
 
 .cappadocia-section {
-    display: flex;
-    align-items: flex-start;
-    height: 650px;
-    background-image: url(/assets/img/yellow-box/yellow-box-photo.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+  display: flex;
+  justify-content: center;
 }
 
-
-.yellow-box{
-    background-color: rgba(0, 255, 34, 0.695);
-    position: relative;
-
+.yellow-box {
+  background-color: rgba(241, 201, 83, 1);
+  height: 500px;
+  width: 100%;
 }
-
-
-.yellow-box img{
-    
-border: solid 1px red;
-}
-
-.yellow-text{
-    background-color: blue;
-    position: absolute;
-    top: 30%;
-    left: 10%;
-  
-}
-
-.yellow-text h3 {
-    color: #54370D;
-    font-family: 'Arima';
-    font-weight: 700;
-    font-size: 3.75rem;
-}
-
-.yellow-text p {
-    color: #54370D;
-    font-family: 'Palanquin';
-    font-size: 1.5rem;
-}
-
-.flag-circle{
-    background-color: yellow;
-    position: absolute;
-    top: 47%;
-    left: 36%;
-   
-   
-    display: flex;
-    align-items: center;
-}
-
-.flag-circle svg{
-    position: relative;
-
-}
-
-.flag-circle img{
-    position: relative;
-    height: 40px;
-    width: 40px;
-    
-}
-
-
 
 /* --- HIGHLIGHTS --- */
 
+/* --- FAQ --- */
 
+/* es ist ein test */
+
+figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+figure h2 {
+  margin: 0;
+  line-height: 1;
+}
+
+figure img {
+  display: block;
+}
+
+.faq-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  gap: 56px;
+
+  /* width: 1200px;
+  height: 500px; */
+}
+
+.faq-section h2 {
+  text-align: center;
+  color: #39b99b;
+  font-size: 48px;
+}
+
+.faq-section figure {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.faq-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.accordion {
+  background-color: #f1c953;
+  color: #54370d;
+  cursor: pointer;
+  padding: 16px;
+  width: 100%;
+  border: none;
+  margin-bottom: 27px;
+  border-radius: 12px;
+  text-align: left;
+  font-size: 16px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+
+/* .accordion::after {
+  content: "⌄";
+  font-size: 24px;
+  line-height: 1;
+  flex-shrink: 0;
+} */
+
+/* .accordion.active::after {
+  content: "⌃";
+} */
+
+.accordion::after {
+  content: "";
+  background-image: url(/assets/img/homepage/arrow_forward_ios.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  width: 20px;
+  height: 10px;
+  /* flex-shrink: 0;  */
+  transition: all transform 300ms ease-in-out;
+}
+
+.accordion.active::after {
+  transform: rotate(180deg);
+}
+
+.accordion:hover {
+  background-color: #e8bb38;
+}
+
+.panel {
+  padding: 0 15px;
+  background-color: #fff8e6;
+  display: none;
+}
+
+.panel p {
+  margin: 0;
+  padding: 15px 0;
+  line-height: 1.5;
+}
 
 /* --- FAQ --- */
 
 /* --- CONTACT FORM --- */
 
 figure {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    /* width: 1100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  /* width: 1100px;
     height: 62px; */
 }
 
+figure > img {
+  width: 30px; /*36px Desktop*/
+  height: 34.29px; /*41.15px Desktop*/
+}
+
+.contact-header > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 5%;
+  padding-right: 5%;
 figure>img {
     width: 30px;
     /*36px Desktop*/
@@ -152,12 +218,30 @@ form>div {
 }
 
 .policy-checkbox {
-    font-size: 15px;
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
+  font-size: 15px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
 }
 
+.policy-checkbox > input[type="checkbox"] {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  margin: 2px 0 0 0;
+  border: 2px solid #54370d;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.policy-checkbox > span {
+  margin: 0;
+  color: #4ea487;
+}
+
+.policy-checkbox > span:hover {
+  text-decoration: underline;
+  cursor: pointer;
 .policy-checkbox>input[type="checkbox"] {
     flex-shrink: 0;
     width: 18px;
@@ -179,11 +263,11 @@ form>div {
 }
 
 label {
-    font-family: Arima;
-    color: #54370D;
-    font-size: 24px;
-    margin-bottom: 5px;
-    margin-top: 20px;
+  font-family: Arima;
+  color: #54370d;
+  font-size: 24px;
+  margin-bottom: 5px;
+  margin-top: 20px;
 }
 
 input {
@@ -202,40 +286,39 @@ input:focus {
 }
 
 form button {
-    align-self: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    background-color: white;
-    border: 1px solid #8C8C8C;
-    color: #707070;
+  align-self: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: white;
+  border: 1px solid #8c8c8c;
+  color: #707070;
 }
-
 
 /* --- FOOTER --- */
 
 footer {
-    background-color: #4EA487;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    padding: 60px 120px;
+  background-color: #4ea487;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 60px 120px;
 }
 
 .info-links {
-    display: flex;
-    align-items: center;
-    gap: 72px;
+  display: flex;
+  align-items: center;
+  gap: 72px;
 }
 
 .info-links a {
-    color: #FFFFFF;
-    font-family: Palanquin;
-    font-size: 18px;
-    text-decoration: none;
+  color: #ffffff;
+  font-family: Palanquin;
+  font-size: 18px;
+  text-decoration: none;
 }
 
 .social-media {
-    display: flex;
-    gap: 16px;
+  display: flex;
+  gap: 16px;
 }
