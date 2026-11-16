@@ -77,6 +77,30 @@ position: relative;
 }
 
 /* --- HIGHLIGHTS --- */
+.highlights {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-top: 88px;
+
+}
+
+
+.highlights>div {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+
+}
+
+.highlights img {
+    display: flex;
+    height: 39px;
+    width: 39px;
+}
+
+.explanation_text {}
 
 /* --- FAQ --- */
 
