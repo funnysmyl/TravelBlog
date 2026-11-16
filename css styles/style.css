@@ -2,81 +2,81 @@
 
 /* Header */
 
-.header-section {
-  background-color: #4ea487;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  gap: 100px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 140px;
+.header-section{
+    background-color:#4EA487;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 140px;
 
   width: 100%;
 }
 
- 
 
-.nav-bar {
-  display: flex;
-  gap: 72px;
-  align-items: center;
-  text-align: center;
+.nav-bar{
+    display: flex;
+    gap: 72px;
+    align-items: center;
+    text-align: center;
 }
 
-.nav-bar img {
-  width: 72px;
-  height: 72px;
+
+.nav-bar img{
+    width: 72px;
+    height: 72px;
 }
 
-.nav-bar > a {
-  color: rgba(248, 245, 235, 1);
-  font-family: Arima;
-  font-size: 1.5rem;
-  font-weight: 700;
-  text-decoration: none;
+.nav-bar > a{
+    color: rgba(248, 245, 235, 1);
+    font-family: Arima;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    
 }
 
 /* --- YELLOW BOX --- */
 
-.cappadocia-section {
-  background-image: url(/assets/img/yellow-box/header-photo.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: start
+.cappadocia-section{
+    display: flex;
+    justify-content: center;
+
 }
 
-.yellow-box {
-text-align: start;
-position: relative;
-}
-
-.yellow-box img{
-  display: flex;
-}
-
-.yellow-text{
-  position: relative;
-  bottom: 55%;
-  left: 15%;
-} 
-
-.yellow-text h3{
-  color: #54370D;
-  font-family: 'Arima';
-  font-weight: 700;
-  font-size: 3.5rem;
-}
-
-.yellow-text p{
-  color: #54370D;
-  font-family: 'palanquin';
-  font-weight: 500;
-  font-size: 1.75;
+.yellow-box{
+    background-color: rgba(241, 201, 83, 1);
+    height: 500px;
+    width: 100%;
 }
 
 /* --- HIGHLIGHTS --- */
+.highlights {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-top: 88px;
+
+}
+
+
+.highlights>div {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+
+}
+
+.highlights img {
+    display: flex;
+    height: 39px;
+    width: 39px;
+}
+
+.explanation_text {}
 
 /* --- FAQ --- */
 
@@ -206,39 +206,18 @@ figure {
 }
 
 figure > img {
-  width: 30px; /*36px Desktop*/
-  height: 34.29px; /*41.15px Desktop*/
+    width: 30px;       /*36px Desktop*/
+    height: 34.29px;   /*41.15px Desktop*/
 }
 
 .contact-header > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-form > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-figure>img {
-    width: 30px;
-    /*36px Desktop*/
-    height: 34.29px;
-    /*41.15px Desktop*/
-}
-
-.contact-header>div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-form>div {
+form > div {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -254,25 +233,6 @@ form>div {
 }
 
 .policy-checkbox > input[type="checkbox"] {
-  flex-shrink: 0;
-  width: 18px;
-  height: 18px;
-  margin: 2px 0 0 0;
-  border: 2px solid #54370d;
-  border-radius: 2px;
-  cursor: pointer;
-}
-
-.policy-checkbox > span {
-  margin: 0;
-  color: #4ea487;
-}
-
-.policy-checkbox > span:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-.policy-checkbox>input[type="checkbox"] {
     flex-shrink: 0;
     width: 18px;
     height: 18px;
@@ -326,29 +286,29 @@ form button {
 
 /* --- FOOTER --- */
 
-footer {
-  background-color: #4ea487;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-  padding: 60px 120px;
+footer{
+    background-color: #4EA487;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 60px 120px;
 }
 
-.info-links {
-  display: flex;
-  align-items: center;
-  gap: 72px;
+.info-links{
+    display: flex;
+    align-items: center;
+    gap: 72px;
 }
 
-.info-links a {
-  color: #ffffff;
-  font-family: Palanquin;
-  font-size: 18px;
-  text-decoration: none;
+.info-links a{
+    color: #FFFFFF;
+    font-family: Palanquin;
+    font-size: 18px;
+    text-decoration: none;
 }
 
-.social-media {
-  display: flex;
-  gap: 16px;
+.social-media{
+    display: flex;
+    gap: 16px;
 }
