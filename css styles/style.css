@@ -195,6 +195,26 @@ form > div {
   justify-content: flex-start;
   padding-left: 5%;
   padding-right: 5%;
+figure>img {
+    width: 30px;
+    /*36px Desktop*/
+    height: 34.29px;
+    /*41.15px Desktop*/
+}
+
+.contact-header>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .policy-checkbox {
@@ -222,6 +242,24 @@ form > div {
 .policy-checkbox > span:hover {
   text-decoration: underline;
   cursor: pointer;
+.policy-checkbox>input[type="checkbox"] {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    margin: 2px 0 0 0;
+    border: 2px solid #54370D;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.policy-checkbox>span {
+    margin: 0;
+    color: #4EA487;
+}
+
+.policy-checkbox>span:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 label {
@@ -233,16 +271,18 @@ label {
 }
 
 input {
-  border: none;
-  border-bottom: 2px solid;
-  height: 29px; /* acuh 29px Desktop*/
-  margin-top: 17px;
-  margin-bottom: 17px;
+    border: none;
+    border-bottom: 2px solid;
+    height: 29px;
+    /* acuh 29px Desktop*/
+    margin-top: 17px;
+    margin-bottom: 17px;
 }
 
 input:focus {
-  outline: none; /* kein blauer Rahmen beim Klicken */
-  border-bottom-width: 2px;
+    outline: none;
+    /* kein blauer Rahmen beim Klicken */
+    border-bottom-width: 2px;
 }
 
 form button {
