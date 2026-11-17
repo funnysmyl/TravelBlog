@@ -132,6 +132,7 @@
     
 }
 
+
 .slider_a {
     position: relative;
     border-top-right-radius: 100px;
@@ -185,6 +186,10 @@
     display: flex;
 
     transition:all 1s ease-in-out ;
+}
+.slider_a_wrapper>p{
+    display: flex;
+    
 }
 
 /* muss noch die schrift in den slider implementieren  */
