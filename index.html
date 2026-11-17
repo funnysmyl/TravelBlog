@@ -21,9 +21,9 @@
                 <!-- !!LINK TO DUCKDUCKGO REPLACE WHEN REAL LINK IS AVAILABLE!! -->
                 <a href="https://duckduckgo.com/" target="_blank" rel="noopener noreferer"><img
                         src="./assets/img/header/travelblog-icon.svg" alt="Travelblog Logo"></a>
-                <a href="">Highlights</a>
-                <a href="">FAQ</a>
-                <a href="">Contact</a>
+                <a href="#highlight-section">Highlights</a>
+                <a href="#faq-section">FAQ</a>
+                <a href="#contact">Contact</a>
                 <a href="https://youtu.be/BJWi2MEbKXc">Gandalf</a>
             </div>
         </section>
@@ -64,9 +64,9 @@
 
         </section>
 
-         <section class="highlights">
+        <section id="highlight-section" class="highlights">
             <div>
-                <h2>Highlights</h2>
+                <h2 id="highlights">Highlights</h2>
                 <img src="./assets/img/Highlights/rocket_launch.png" alt="rocket_img">
             </div>
             <div class="explanation_text">
@@ -78,28 +78,35 @@
                     verschwimmt die Grenze zwischen Himmel und Erde und lässt uns einfach nur staunen.</p>
             </div>
         </section>
-
-        <section class="slider_a">
-            <input type="radio" name="slider" value="first" checked>
-            <input type="radio" name="slider" value="second">
-            <input type="radio" name="slider" value="third">
-            <input type="radio" name="slider" value="forth">
-            <!-- change  to img -->
-            <div class="slider_a_wrapper">
-                <div class="slider_a_element element first"></div>
-                <div class="slider_a_element element second"></div>
-                <div class="slider_a_element element third"></div>
-                <div class="slider_a_element element forth"></div>
-            </div>
-        </section>
-
+        <section class="slider">
+            <section class="slider_a">
+                <input type="radio" name="slider" value="first" checked>
+                <input type="radio" name="slider" value="second">
+                <input type="radio" name="slider" value="third">
+                <input type="radio" name="slider" value="fourth">
+                <!-- change  to img -->
+                <div class="slider_a_wrapper">
+                    <div class="slider_a_element element_first">
+                        <img src="./assets/img/Highlights/IslandBeach.jpg" alt="strand_bild">
+                    </div>
+                    <div class="slider_a_element element_second">
+                        <img src="./assets/img/Highlights/Wachspalmen.jpg" alt="wachspalmen_kolumbien">
+                    </div>
+                    <div class="slider_a_element element_third">
+                        <img src="./assets/img/Highlights/stokknes-island-vestrahorn-schwarzer-strand.webp" alt="schwarzer_strand_island">
+                    </div>
+                    <div class="slider_a_element element_fourth">
+                        <img src="./assets/img/Highlights/nordkap-winter-nordlicht.webp" alt="nordkap_nordlich">
+                    </div>
+                </div>
             </section>
-            <!-- FAQ Section -->
+        </section>
+        <!-- FAQ Section -->
 
         <!-- FAQ Section -->
         <!-- es ist ein test -->
 
-        <section class="faq-section">
+        <section id="faq-section" class="faq-section">
 
             <div>
                 <img src="./assets/img/homepage/live_help.png" alt="Live Help">
@@ -153,38 +160,38 @@
             </div>
         </section>
 
-       
 
 
-            <!-- Contact Form -->
-            <section class="contact-header">
-                <figure>
-                    <img src="./assets/img/Homepage/person_pin.png" alt="Person Pin">
-                    <h2>Contact form</h2>
-                </figure>
-                <!-- <div>
+
+        <!-- Contact Form -->
+        <section id="contact" class="contact-header">
+            <figure>
+                <img src="./assets/img/Homepage/person_pin.png" alt="Person Pin">
+                <h2>Contact form</h2>
+            </figure>
+            <!-- <div>
                 <p>Have a question or an idea to collaborate?</p>
                 <p><br>Get in touch—I’d love to hear from you and explore how we can work together.</p>
             </div> -->
-            </section>
+        </section>
 
-            <form>
-                <div>
-                    <label for="name">What's your name?</label>
-                    <input type="name" id="name" name="name">
-                    <label for="email">What's your email?</label>
-                    <input type="email" id="email" name="email">
-                    <label for="text">How can I help?</label>
-                    <input type="text" id="text" name="text">
-                </div>
-                <div>
-                    <label class="policy-checkbox">
-                        <input type="checkbox" name="policy">I've read the <span>privacy policy</span> and agree to the
-                        processing of my data as outlined.
-                    </label>
-                    <button type="send">Send</button>
-                </div>
-            </form>
+        <form>
+            <div>
+                <label for="name">What's your name?</label>
+                <input type="name" id="name" name="name">
+                <label for="email">What's your email?</label>
+                <input type="email" id="email" name="email">
+                <label for="text">How can I help?</label>
+                <input type="text" id="text" name="text">
+            </div>
+            <div>
+                <label class="policy-checkbox">
+                    <input type="checkbox" name="policy">I've read the <span>privacy policy</span> and agree to the
+                    processing of my data as outlined.
+                </label>
+                <button type="send">Send</button>
+            </div>
+        </form>
 
     </main>
 
