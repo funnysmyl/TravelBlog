@@ -44,22 +44,26 @@
     background-repeat: no-repeat;
     background-size: 1440px;
     background-position: center;
+    height: 530px;
     display: flex;
-    justify-content: start
+    justify-content: start;
 }
 
 .yellow-box {
-    text-align: start;
     position: relative;
+    text-align: start;
 }
 
 .yellow-box img {
     display: flex;
+     height: 580px;
+    width: 645px;
+
 }
 
 .yellow-text {
     position: relative;
-    bottom: 55%;
+    bottom: 75%;
     left: 15%;
 }
 
@@ -75,6 +79,14 @@
     font-family: 'palanquin';
     font-weight: 500;
     font-size: 1.75;
+}
+
+.flag-cirle {
+
+}
+
+.flag-cirle img{
+ 
 }
 
 /* --- HIGHLIGHTS --- */
