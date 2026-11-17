@@ -46,25 +46,27 @@
     background-position: center;
     height: 530px;
     display: flex;
-    justify-content: start;
+    justify-content: center;
 }
 
 .yellow-box {
     position: relative;
+    justify-content: center;
     text-align: start;
+
 }
 
 .yellow-box img {
     display: flex;
      height: 580px;
-    width: 645px;
+    width: 100%;
 
 }
 
 .yellow-text {
     position: relative;
     bottom: 75%;
-    left: 15%;
+    left: 35%;
 }
 
 .yellow-text h3 {
@@ -81,13 +83,13 @@
     font-size: 1.75rem;
 }
 
-.flag-cirle {
+/* .flag-cirle {
 
 }
 
 .flag-cirle img{
  
-}
+} */
 
 /* --- HIGHLIGHTS --- */
 .highlights {
