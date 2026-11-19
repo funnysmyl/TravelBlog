@@ -58,8 +58,8 @@
 
 .yellow-box img {
     display: flex;
-    height: 580px;
-    width: 645px;
+    height: 530px;
+    width: 1440px;
 
 }
 
@@ -67,13 +67,40 @@
     position: relative;
     bottom: 75%;
     left: 35%;
+
+   
+
 }
 
 .yellow-text h3 {
+    position: relative;
     color: #54370D;
     font-family: 'Arima';
     font-weight: 700;
     font-size: 3.5rem;
+
+    animation: slide-up 4s;
+   animation-fill-mode: both;
+   animation-duration: 2s;
+}
+
+@keyframes slide-up{
+    from {
+        bottom: -300px;
+        opacity: 0;
+    }
+
+    to{
+        bottom: -200px;
+    }
+
+    to{
+        bottom: -100px;
+    }
+
+    to{
+        bottom: 0px;
+    }
 }
 
 .yellow-text p {
@@ -81,6 +108,15 @@
     font-family: 'palanquin';
     font-weight: 500;
     font-size: 1.75rem;
+
+     animation: show-self 8s;
+   animation-fill-mode: both;
+}
+
+@keyframes show-self{
+    from {
+        opacity: -600;
+    }
 }
 
 .flag-cirle {}
