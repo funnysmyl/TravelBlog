@@ -37,6 +37,19 @@
     text-decoration: none;
 }
 
+.gaba-icon img{
+    margin-left: 500px;
+    animation: gaba-hide 2s forwards;
+}
+
+/* Trololol */
+
+@keyframes gaba-hide{
+    from{opacity: 1;}
+    to {opacity: 0;} 
+}
+
+
 /* --- YELLOW BOX --- */
 
 .cappadocia-section {
@@ -73,14 +86,12 @@
 }
 
 .yellow-text h3 {
-    position: relative;
     color: #54370D;
     font-family: 'Arima';
     font-weight: 700;
     font-size: 3.5rem;
 
     animation: slide-up 4s;
-   animation-fill-mode: both;
    animation-duration: 2s;
 }
 
@@ -110,7 +121,7 @@
     font-size: 1.75rem;
 
      animation: show-self 8s;
-   animation-fill-mode: both;
+   
 }
 
 @keyframes show-self{
