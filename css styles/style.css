@@ -38,7 +38,7 @@
 }
 
 .gaba-icon img{
-    margin-left: 500px;
+    margin-left: 450px;
     animation: gaba-hide 2s forwards;
 }
 
@@ -66,73 +66,114 @@
     position: relative;
     justify-content: center;
     text-align: start;
-
+    overflow: hidden;
+    
 }
 
 .yellow-box img {
+    position: relative;
+    z-index: 1;
     display: flex;
     height: 530px;
     width: 1440px;
 
+    animation: yellow-box-slide 1s forwards;
+    animation-delay: 1s;
+}
+
+@keyframes yellow-box-slide{
+    from{
+        padding-right: 0%;
+    }
+
+    to{
+        padding-right: 50px;
+    }
+
+    to{
+        opacity: 0;
+    }
+
+}
+
+.yellow-box-swung{
+    position: absolute;
+     display: flex;
+    width: 1440px;
+
+    animation: yellow-box-slide 2s forwards;
+    animation-delay: 1s;
+}
+
+@keyframes yellow-box-slide{
+    from{
+        
+        padding-right: 0px;
+    }
+
+    to{
+        
+        padding-right: 10px;
+    }
 }
 
 .yellow-text {
-    position: relative;
+    position: absolute;
+    top: 110px;
     bottom: 75%;
     left: 35%;
+    z-index: 3;
 
    
 
 }
 
 .yellow-text h3 {
+    position: relative;
     color: #54370D;
     font-family: 'Arima';
     font-weight: 700;
     font-size: 3.5rem;
 
-    animation: slide-up 4s;
-   animation-duration: 2s;
+    animation: slide-up 1s forwards;
+    animation-duration: 1s;
+
 }
 
 @keyframes slide-up{
+  
     from {
         bottom: -300px;
         opacity: 0;
     }
 
-    to{
-        bottom: -200px;
-    }
-
-    to{
-        bottom: -100px;
-    }
-
-    to{
-        bottom: 0px;
+    to {
+        bottom: 0;
+        opacity: 1;
     }
 }
+
 
 .yellow-text p {
     color: #54370D;
     font-family: 'palanquin';
     font-weight: 500;
     font-size: 1.75rem;
-
-     animation: show-self 8s;
-   
+    
+    animation: show-self 250ms;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
 }
 
 @keyframes show-self{
     from {
-        opacity: -600;
+        opacity: 0;
     }
 }
-
+/* 
 .flag-cirle {}
 
-.flag-cirle img {}
+.flag-cirle img {} */
 
 /* --- HIGHLIGHTS --- */
 .highlights {
