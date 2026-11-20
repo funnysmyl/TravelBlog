@@ -54,34 +54,37 @@
 
 .cappadocia-section {
     background-image: url(/assets/img/yellow-box/header-photo.png);
+    z-index: 1;
     background-repeat: no-repeat;
     background-size: 1440px;
     background-position: center;
     height: 530px;
     display: flex;
     justify-content: center;
-}
-
-.yellow-box {
-    position: relative;
-    justify-content: center;
-    text-align: start;
-    overflow: hidden;
     
 }
 
-.yellow-box img {
+.yellow-box {
+    z-index: 2;
+    position: absolute;
+    justify-content: center;
+    text-align: start;
+    
+ 
+}
+
+.yellow-box-rect img {
     position: relative;
-    z-index: 1;
+    z-index: 3;
     display: flex;
     height: 530px;
     width: 1440px;
 
-    animation: yellow-box-slide 1s forwards;
+    animation: yellow-box-rect-slide 1s forwards;
     animation-delay: 1s;
 }
 
-@keyframes yellow-box-slide{
+@keyframes yellow-box-rect-slide{
     from{
         padding-right: 0%;
     }
@@ -96,16 +99,19 @@
 
 }
 
-.yellow-box-swung{
-    position: absolute;
-     display: flex;
-    width: 1440px;
 
-    animation: yellow-box-slide 2s forwards;
-    animation-delay: 1s;
+.yellow-box-swung {
+    position: relative;
+    z-index: 4;
+     display: flex;
+    width: 2000px;
+
+    animation: yellow-box-swung-slide 2s forwards;
+    animation-delay: 10s;
 }
 
-@keyframes yellow-box-slide{
+
+@keyframes yellow-box-swung-slide{
     from{
         
         padding-right: 0px;
@@ -117,12 +123,14 @@
     }
 }
 
+
+
 .yellow-text {
     position: absolute;
     top: 110px;
     bottom: 75%;
     left: 35%;
-    z-index: 3;
+    z-index: 5;
 
    
 
@@ -170,11 +178,82 @@
         opacity: 0;
     }
 }
-/* 
-.flag-cirle {}
 
-.flag-cirle img {} */
+.cappadocia_turkey {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slideUpFadeIn 1.5s ease-out forwards;
+}
 
+.turkey_img {
+    z-index: 5;
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.green_elipse {
+    z-index: 1;
+    height: 160px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.rotating_text {
+    z-index: 1;
+    height: 132px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: turkey_text 15s linear infinite;
+
+
+}
+
+
+
+@keyframes slideUpFadeIn {
+    0% {
+        opacity: 0%;
+        transform: translateY(200px);
+
+        animation-fill-mode: forwards;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(20px);
+    }
+
+
+
+}
+
+@keyframes turkey_text {
+    15% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+
+    }
+
+}
 /* --- HIGHLIGHTS --- */
 .highlights {
     display: flex;
