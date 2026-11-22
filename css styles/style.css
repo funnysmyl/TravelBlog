@@ -11,11 +11,8 @@
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 140px;
-
     width: 100%;
 }
-
-
 
 .nav-bar {
     display: flex;
@@ -43,43 +40,57 @@
 }
 
 /* Trololol */
-
 @keyframes gaba-hide{
     from{opacity: 1;}
     to {opacity: 0;} 
 }
 
-
 /* --- YELLOW BOX --- */
 
-.cappadocia-section {
+.landing-section{
+    position: absolute;
+    z-index: -1;
+    height: 100dvh;
+}
+
+.cappadocia-section{
+    position: relative;
+    z-index: -1;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
     background-image: url(/assets/img/yellow-box/header-photo.png);
-    z-index: 1;
     background-repeat: no-repeat;
+    height: 530px;
     background-size: 1440px;
     background-position: center;
-    height: 530px;
-    display: flex;
-    justify-content: center;
+    overflow: hidden;
     
+
+}
+
+.cappadocia-box {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: left;
+    height: 530px;
+        overflow: hidden;
 }
 
 .yellow-box {
-    z-index: 2;
     position: absolute;
+    z-index: 1;
     justify-content: center;
     text-align: start;
-    
- 
 }
 
 .yellow-box-rect img {
-    position: relative;
-    z-index: 3;
+    position: absolute;
+    z-index: 1;
     display: flex;
     height: 530px;
     width: 1440px;
-
     animation: yellow-box-rect-slide 1s forwards;
     animation-delay: 1s;
 }
@@ -88,52 +99,51 @@
     from{
         padding-right: 0%;
     }
-
     to{
         padding-right: 50px;
     }
-
     to{
         opacity: 0;
     }
-
 }
 
-
-.yellow-box-swung {
-    position: relative;
-    z-index: 4;
+.yellow-box-swung img{
+    position: absolute;
+    z-index: 1;
      display: flex;
-    width: 2000px;
-
+      height: 530px;
+    width: 900px;
     animation: yellow-box-swung-slide 2s forwards;
     animation-delay: 10s;
 }
-
 
 @keyframes yellow-box-swung-slide{
     from{
         
         padding-right: 0px;
     }
-
     to{
         
         padding-right: 10px;
     }
 }
 
-
+.yellow-box-short img{
+     position: absolute;
+    z-index: 2;
+     display: flex;
+      height: 650px;
+    width: 800px;
+    animation: yellow-box-swung-slide 2s forwards;
+    animation-delay: 10s;
+}
 
 .yellow-text {
     position: absolute;
     top: 110px;
     bottom: 75%;
-    left: 35%;
-    z-index: 5;
-
-   
-
+    left: 40%;
+    z-index: 2;
 }
 
 .yellow-text h3 {
@@ -142,32 +152,26 @@
     font-family: 'Arima';
     font-weight: 700;
     font-size: 3.5rem;
-
     animation: slide-up 1s forwards;
     animation-duration: 1s;
-
 }
 
 @keyframes slide-up{
-  
     from {
         bottom: -300px;
         opacity: 0;
     }
-
     to {
         bottom: 0;
         opacity: 1;
     }
 }
 
-
 .yellow-text p {
     color: #54370D;
     font-family: 'palanquin';
     font-weight: 500;
-    font-size: 1.75rem;
-    
+    font-size: 1.75rem;    
     animation: show-self 250ms;
     animation-delay: 1s;
     animation-fill-mode: backwards;
@@ -180,6 +184,10 @@
 }
 
 .cappadocia_turkey {
+    position: relative;
+    left: 440%;
+    top: 300px;
+    z-index: 3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -187,15 +195,13 @@
 }
 
 .turkey_img {
-    z-index: 5;
+    z-index: 3;
     height: 50px;
     width: 100%;
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-
-
 }
 
 .green_elipse {
@@ -206,62 +212,45 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-
 }
 
 .rotating_text {
     z-index: 1;
     height: 132px;
     width: 100%;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     animation: turkey_text 15s linear infinite;
-
-
 }
-
-
 
 @keyframes slideUpFadeIn {
     0% {
         opacity: 0%;
         transform: translateY(200px);
-
         animation-fill-mode: forwards;
     }
-
     100% {
         opacity: 1;
         transform: translateY(20px);
     }
-
-
-
 }
 
 @keyframes turkey_text {
     15% {
         transform: rotate(0deg);
     }
-
     100% {
         transform: rotate(360deg);
-
     }
-
 }
+
 /* --- HIGHLIGHTS --- */
 .highlights {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     padding-top: 88px;
-
 }
 
 .highlights_text{
@@ -269,14 +258,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: row-reverse;
-
 }
 
 .highlights>div {
     display: flex;
     justify-content: center;
     flex-direction: row-reverse;
-
 }
 
 .highlights img {
@@ -294,16 +281,12 @@
     padding-top: 24px;
     padding-bottom: 88px;
 color: #54370D;
-
 }
 
 .slider {
-
     display: flex;
     justify-content: center;
     align-items: center;
-
-
 }
 
 
