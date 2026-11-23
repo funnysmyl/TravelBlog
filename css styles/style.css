@@ -88,13 +88,13 @@
 }
 
 .yellow-box-rect img {
-  position: absolute;
-  z-index: 1;
-  display: flex;
-  height: 530px;
-  width: 1440px;
-  animation: yellow-box-rect-slide 1s forwards;
-  animation-delay: 1s;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    height: 530px;
+    width: 1440px;
+    animation: yellow-box-rect-slide 1s forwards;
+    animation-delay: 2s;
 }
 
 @keyframes yellow-box-rect-slide {
@@ -109,15 +109,15 @@
   }
 }
 
-.yellow-box-swung img {
-  position: absolute;
-  z-index: 1;
-  display: flex;
-  height: 530px;
-  width: 2000px;
-  animation: yellow-box-swung-slide 1s forwards;
-  animation-delay: 1s;
-  /* animation: yellow-box-swung-blendout 1s forwards;
+.yellow-box-swung img{  
+    position: absolute;
+    z-index: 1;
+     display: flex;
+      height: 530px;
+    width: 2000px;
+    animation: yellow-box-swung-slide 1s forwards;
+    animation-delay: 2s;
+    /* animation: yellow-box-swung-blendout 1s forwards;
     animation-delay: 3s; */
 }
 
@@ -135,14 +135,14 @@
     to{opacity: 0;}
 } */
 
-.yellow-box-short img {
-  position: absolute;
-  z-index: 6;
-  display: flex;
-  height: 650px;
-  width: 800px;
-  animation: yellow-box-swung-slide 2s forwards;
-  animation-delay: 10s;
+.yellow-box-short img{
+     position: absolute;
+    z-index: 2;
+     display: flex;
+      height: 650px;
+    width: 800px;
+    animation: yellow-box-swung-slide 2s forwards;
+    animation-delay: 10s;
 }
 
 .yellow-text {
@@ -154,24 +154,26 @@
 }
 
 .yellow-text h3 {
-  position: relative;
-  color: #54370d;
-  font-family: "Arima";
-  font-weight: 700;
-  font-size: 3.5rem;
-  animation: slide-up 1s forwards;
-  animation-duration: 1s;
+    position: relative;
+    color: #54370D;
+    font-family: 'Arima';
+    font-weight: 700;
+    font-size: 3.5rem;
+    animation: slide-up 250ms forwards;
+    animation-duration: 1s;
 }
 
-@keyframes slide-up {
-  from {
-    bottom: -300px;
-    opacity: 0;
-  }
-  to {
-    bottom: 0;
-    opacity: 1;
-  }
+@keyframes slide-up{
+    from {
+        bottom: -300px;
+        transform: translateX(+200px); 
+
+        opacity: 0;
+    }
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
 }
 
 .yellow-text p {
@@ -191,14 +193,14 @@
 }
 
 .cappadocia_turkey {
-  position: relative;
-  left: 440%;
-  top: 300px;
-  z-index: 3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: slideUpFadeIn 1.5s ease-out forwards;
+    position: relative;
+    left: 400%;
+    top: 300px;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slideUpFadeIn 500ms ease-out forwards;
 }
 
 .turkey_img {
