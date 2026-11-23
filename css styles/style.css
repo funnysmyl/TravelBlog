@@ -5,7 +5,7 @@
 .header-section {
   background-color: #4ea487;
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
   gap: 100px;
   padding-top: 30px;
@@ -16,7 +16,7 @@
 
 .nav-bar {
   display: flex;
-  gap: 72px;
+  gap: 100px;
   align-items: center;
   text-align: center;
 }
@@ -54,7 +54,7 @@
 .landing-section {
   position: absolute;
   z-index: -1;
-  height: 100dvh;
+height: 100dvh;
 }
 
 .cappadocia-section {
@@ -65,7 +65,7 @@
   flex-direction: column;
   background-image: url(/assets/img/yellow-box/header-photo.png);
   background-repeat: no-repeat;
-
+  height: 530px;
   background-size: 1440px;
   background-position: center;
   overflow: hidden;
@@ -76,8 +76,6 @@
   z-index: 1;
   display: flex;
   justify-content: left;
-  height: 530px;
-  overflow: hidden;
 }
 
 .yellow-box {
