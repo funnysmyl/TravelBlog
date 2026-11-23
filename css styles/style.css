@@ -418,9 +418,6 @@
   align-items: center;
   padding: 16px 8px;
   gap: 56px;
-
-  /* width: 1200px;
-  height: 500px; */
 }
 
 .faq-head {
@@ -449,7 +446,6 @@
 .faq-container {
   width: 100%;
   max-width: 1200px;
-
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -458,29 +454,22 @@
 .faq-item {
   background-color: #f1c953;
   border-radius: 12px;
-
   overflow: hidden;
   interpolate-size: allow-keywords;
 }
 
 .faq-question {
+  width: 100%;
   color: #54370d;
   cursor: pointer;
-
   padding: 16px 14px;
-
   font-size: 24px;
   font-weight: 600;
-  /* letter-spacing: 0; */
-
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 32px;
-
-  width: 100%;
   border: none;
-
   border-radius: 12px;
   text-align: left;
   line-height: 1;
@@ -488,19 +477,14 @@
 
 .faq-question::after {
   content: "";
-  /* display: block; */
 
   background-image: url(../assets/img/homepage/arrow_forward_ios.png);
-
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-
   width: 20px;
   height: 10px;
   flex-shrink: 0;
-
-  /* transform: rotate(0deg); */
   transition: all 0.4s ease-in-out;
 }
 
@@ -511,11 +495,8 @@
 .faq-answer {
   background-color: white;
   border-radius: 5px;
-
   margin: 0 14px 10px 14px;
   padding: 4px 10px;
-
-  /* gap: 10px;   */
 }
 
 .faq-answer p {
@@ -528,7 +509,6 @@
 .faq-item::details-content {
   height: 0;
   overflow: hidden;
-
   transition:
     height 0.5s ease-in-out,
     content-visibility 0.5s allow-discrete;
