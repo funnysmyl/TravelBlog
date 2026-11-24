@@ -1,0 +1,21 @@
+/* --- VARIABLEN --- */
+/* Zentrale Werte, damit Farben & Abstände nur an EINER Stelle gepflegt werden */
+
+:root {
+    /* Farben */
+    --color-green: #4EA487;
+    --color-green-light: #E3F1EC;
+    --color-yellow: #F1C953;
+    --color-brown: #54370D;
+    --color-white: #FFFFFF;
+    --color-grey-light: #F4F4F4;
+
+    /* Abstände */
+    --gap-s: 16px;
+    --gap-m: 32px;
+    --gap-l: 64px;
+
+    /* Ecken */
+    --radius-m: 16px;
+    --radius-l: 24px;
+}

@@ -1,0 +1,248 @@
+/* --- ARTICLE 01 – CAROUSEL ("Breathtaking Beaches") --- */
+
+/* kleinerer Abstand als auf der Startseite (.main-section hat 120px) */
+.article-main {
+  gap: var(--gap-l);
+}
+
+/* --- Kopfbereich: Intro links, Autorin rechts --- */
+
+.article-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--gap-m);
+}
+
+.article-intro {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-s);
+}
+
+.article-lead {
+  width: auto;          /* überschreibt die feste p-Breite aus standard.css */
+  font-size: 28px;
+}
+
+.article-meta {
+  display: flex;
+  gap: var(--gap-m);
+  padding: 0;
+  list-style: none;
+  font-family: Palanquin;
+  font-size: 14px;
+  color: var(--color-brown);
+}
+
+.article-meta li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.article-meta img {
+  width: 16px;
+  height: 16px;
+}
+
+.author-card {
+  flex-shrink: 0;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: var(--gap-s);
+  border-radius: var(--radius-m);
+  background-color: var(--color-grey-light);
+  text-align: center;
+}
+
+.author-card img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author-card h3 {
+  font-family: Arima;
+  font-size: 20px;
+  color: var(--color-brown);
+}
+
+.author-card p {
+  width: auto;
+  font-size: 13px;
+  text-align: left;
+}
+
+.author-card .author-role {
+  margin-top: -8px;
+  color: var(--color-green);
+  font-size: 14px;
+}
+
+/* --- Karussell (Slider B) --- */
+
+.carousel-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-m);
+}
+
+.carousel-section h3 {
+  font-family: 'Palanquin Dark';
+  font-size: 32px;
+  color: var(--color-brown);
+}
+
+.slider_b {
+  height: 391px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider_b_element {
+  z-index: 1;
+  width: 220px;
+  height: 80%;
+  border-radius: var(--radius-m);
+  overflow: hidden;
+
+  box-shadow: 0px 4px 3px rgba(3, 7, 18, 0.03),
+    0px 14px 11px rgba(3, 7, 18, 0.05),
+    0px 32px 24px rgba(3, 7, 18, 0.08);
+
+  transform: perspective(600px) rotateY(20deg) translateX(-20px);
+  transform-origin: 50% 50%;
+  transition: all 250ms ease-in-out;
+}
+
+.slider_b_element img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;    /* Bild füllt die Karte, ohne verzerrt zu werden */
+}
+
+/* Statt scaleX/scaleY (würde das Foto verzerren) wird die Karte breiter/höher */
+.slider_b_element:hover {
+  z-index: 2;
+  width: 330px;
+  height: 100%;
+  transform: perspective(600px) rotateY(0deg) translateX(0px);
+}
+
+.slider_b_element:hover ~ .slider_b_element {
+  transform: perspective(600px) rotateY(-20deg) translateX(20px);
+}
+
+/* --- Artikeltext --- */
+
+.article-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-m);
+  font-family: Palanquin;     /* wird an li vererbt */
+  color: var(--color-brown);
+  line-height: 1.5;
+}
+
+.article-content > p {
+  width: 100%;                /* Fließtext über die volle Breite */
+}
+
+.article-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-s);
+}
+
+.article-content li {
+  margin-bottom: 8px;
+}
+
+/* --- Pro Tipps --- */
+
+.pro-tips {
+  position: relative;
+  width: 878px;
+  padding: 48px 32px 24px;
+  border-radius: var(--radius-l);
+  background-color: var(--color-green-light);
+}
+
+.pro-tips-badge {
+  position: absolute;
+  top: -24px;
+  left: -24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  border-radius: 12px;
+  background-color: var(--color-green);
+  color: var(--color-yellow);
+  font-family: Arima;
+  font-size: 22px;
+  transform: rotate(-8deg);
+}
+
+.pro-tips-badge img {
+  width: 24px;
+  height: 24px;
+}
+
+.pro-tips a {
+  color: var(--color-green);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.pro-tips a:hover {
+  text-decoration: underline;
+}
+
+/* --- Teilen --- */
+
+.share-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-s);
+}
+
+.share-section p {
+  width: auto;
+  text-align: center;
+}
+
+.share-action {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--gap-s);
+}
+
+.share-arrow {
+  width: 80px;
+}
+
+.share-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  background-color: var(--color-green);
+  color: var(--color-white);
+}
+
+.share-button img {
+  width: 20px;
+  height: 20px;
+}
