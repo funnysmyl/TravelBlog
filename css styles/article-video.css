@@ -1,0 +1,239 @@
+/* --- ARTICLE 02 – VIDEO ("Copenhagen in 3 Days") --- */
+
+/* kleinerer Abstand als auf der Startseite (.main-section hat 120px) */
+.article-main {
+  max-width: 1440px;
+  margin: 0 auto;                 /* zentriert auf breiten Bildschirmen */
+  gap: var(--gap-l);
+}
+
+/* --- Kopfbereich: Intro links, Autorin rechts --- */
+
+.article-head {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--gap-m);              /* align-items: stretch (Standard) -> Autorin-Box so hoch wie das Intro */
+}
+
+.article-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.article-intro h1,
+.article-intro .subtitle {
+  line-height: 1.1;     /* Arima/Palanquin haben von Haus aus viel Zeilenhöhe */
+}
+
+.article-lead {
+  width: auto;          /* überschreibt die feste p-Breite aus standard.css */
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.article-meta {
+  display: flex;
+  gap: var(--gap-m);
+  padding: 0;
+  list-style: none;
+  font-family: Palanquin;
+  font-size: 14px;
+  color: var(--color-brown);
+}
+
+.article-meta li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.article-meta img {
+  width: 16px;
+  height: 16px;
+}
+
+.author-card {
+  flex-shrink: 0;
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: var(--gap-s);
+  border-radius: var(--radius-m);
+  background-color: var(--color-green-light);
+  text-align: center;
+}
+
+.author-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author-card h3 {
+  font-family: Arima;
+  font-size: 20px;
+  color: var(--color-brown);
+}
+
+.author-card p {
+  width: auto;
+  font-size: 13px;
+  text-align: left;
+}
+
+.author-card .author-role {
+  margin-top: -8px;
+  color: var(--color-green);
+  font-size: 14px;
+}
+
+/* --- Artikeltext --- */
+
+.article-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-m);
+  font-family: Palanquin;     /* wird an li vererbt */
+  color: var(--color-brown);
+  line-height: 1.5;
+}
+
+.article-content > p {
+  width: 100%;                /* Fließtext über die volle Breite */
+}
+
+.article-list {
+  align-self: flex-start;           /* Liste beginnt links bündig mit dem Fließtext */
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-s);
+}
+
+/* --- Pro Tipps --- */
+
+.pro-tips {
+  position: relative;
+  width: 100%;
+  max-width: 1040px;
+  margin-top: var(--gap-l);        /* mehr Luft über der Box */
+  padding: 48px 32px 24px;
+  border-radius: var(--radius-l);
+  background-color: var(--color-green-light);
+}
+
+.pro-tips-badge {
+  position: absolute;
+  top: -24px;
+  left: -24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  border-radius: 12px;
+  background-color: var(--color-green);
+  color: var(--color-yellow);
+  font-family: Arima;
+  font-size: 22px;
+  transform: rotate(-8deg);
+}
+
+.pro-tips-badge img {
+  width: 24px;
+  height: 24px;
+}
+
+.pro-tips a {
+  color: var(--color-green);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.pro-tips a:hover {
+  text-decoration: underline;
+}
+
+/* --- Teilen --- */
+
+.share-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-s);
+}
+
+.share-section p {
+  width: auto;
+  text-align: center;
+  font-family: Arima;
+  font-size: 20px;
+}
+
+.share-action {
+  position: relative;   /* Bezugspunkt für den Pfeil -> Button bleibt mittig */
+}
+
+.share-arrow {
+  position: absolute;
+  right: 100%;
+  bottom: 50%;
+  width: 80px;
+  margin-right: 8px;
+}
+
+.share-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  background-color: var(--color-green);
+  color: var(--color-yellow);
+}
+
+.share-button img {
+  width: 20px;
+  height: 20px;
+}
+
+/* --- Video --- */
+
+.video-box {
+  position: relative;             /* Bezugspunkt für das Play-Icon */
+  width: 100%;
+  max-width: 933px;
+  margin: var(--gap-l) 0;         /* mehr Abstand als zwischen normalen Absätzen */
+  border-radius: 40px;
+  overflow: hidden;               /* Video bekommt die runden Ecken */
+}
+
+.video-box video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 140px;
+  height: 140px;
+  transform: translate(-50%, -50%);   /* exakt mittig */
+  pointer-events: none;               /* Klick geht durch aufs Video */
+  transition: opacity 250ms ease-in-out;
+}
+
+/* Icon ausblenden, sobald man über das Video fährt oder es angeklickt hat */
+.video-box:hover .play-icon,
+.video-box:focus-within .play-icon {
+  opacity: 0;
+}
