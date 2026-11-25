@@ -1,7 +1,13 @@
 /* --- ARTICLE 01 – CAROUSEL ("Breathtaking Beaches") --- */
 
+* {
+  outline: 1px solid red;
+}
+
 /* kleinerer Abstand als auf der Startseite (.main-section hat 120px) */
 .article-main {
+  max-width: 1440px;
+  margin: 0 auto;                 /* zentriert auf breiten Bildschirmen */
   gap: var(--gap-l);
 }
 
@@ -10,19 +16,24 @@
 .article-head {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  gap: var(--gap-m);
+  gap: var(--gap-m);              /* align-items: stretch (Standard) -> Autorin-Box so hoch wie das Intro */
 }
 
 .article-intro {
   display: flex;
   flex-direction: column;
-  gap: var(--gap-s);
+  gap: 8px;
+}
+
+.article-intro h1,
+.article-intro .subtitle {
+  line-height: 1.1;     /* Arima/Palanquin haben von Haus aus viel Zeilenhöhe */
 }
 
 .article-lead {
   width: auto;          /* überschreibt die feste p-Breite aus standard.css */
   font-size: 28px;
+  line-height: 1.2;
 }
 
 .article-meta {
@@ -48,20 +59,21 @@
 
 .author-card {
   flex-shrink: 0;
-  width: 260px;
+  width: 340px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 8px;
   padding: var(--gap-s);
   border-radius: var(--radius-m);
-  background-color: var(--color-grey-light);
+  background-color: var(--color-green-light);
   text-align: center;
 }
 
 .author-card img {
-  width: 96px;
-  height: 96px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -90,7 +102,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--gap-m);
+  gap: var(--gap-l);
 }
 
 .carousel-section h3 {
@@ -100,7 +112,7 @@
 }
 
 .slider_b {
-  height: 391px;
+  height: 420px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,16 +120,15 @@
 
 .slider_b_element {
   z-index: 1;
-  width: 220px;
-  height: 80%;
+  width: 300px;
+  height: 100%;
+  margin: 0 -50px;      /* negativer Rand -> Bilder überlappen sich */
   border-radius: var(--radius-m);
   overflow: hidden;
 
-  box-shadow: 0px 4px 3px rgba(3, 7, 18, 0.03),
-    0px 14px 11px rgba(3, 7, 18, 0.05),
-    0px 32px 24px rgba(3, 7, 18, 0.08);
+  box-shadow: -4px 4px 8px rgba(3, 7, 18, 0.15);   /* dezenter Schatten links/unten */
 
-  transform: perspective(600px) rotateY(20deg) translateX(-20px);
+  transform: perspective(800px) rotateY(20deg) translateX(-20px);
   transform-origin: 50% 50%;
   transition: all 250ms ease-in-out;
 }
@@ -129,16 +140,21 @@
   object-fit: cover;    /* Bild füllt die Karte, ohne verzerrt zu werden */
 }
 
-/* Statt scaleX/scaleY (würde das Foto verzerren) wird die Karte breiter/höher */
-.slider_b_element:hover {
-  z-index: 2;
+/* Beim Hovern über den Slider werden alle Karten etwas breiter ... */
+.slider_b:hover .slider_b_element {
   width: 330px;
-  height: 100%;
-  transform: perspective(600px) rotateY(0deg) translateX(0px);
+}
+
+/* ... nur die gehoverte bleibt normal groß, steht gerade und bekommt Abstand */
+.slider_b .slider_b_element:hover {
+  z-index: 2;
+  width: 300px;
+  margin: 0 40px;
+  transform: perspective(800px) rotateY(0deg) translateX(0px);
 }
 
 .slider_b_element:hover ~ .slider_b_element {
-  transform: perspective(600px) rotateY(-20deg) translateX(20px);
+  transform: perspective(800px) rotateY(-20deg) translateX(20px);
 }
 
 /* --- Artikeltext --- */
@@ -147,7 +163,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--gap-m);
+  gap: var(--gap-l);
   font-family: Palanquin;     /* wird an li vererbt */
   color: var(--color-brown);
   line-height: 1.5;
@@ -157,21 +173,24 @@
   width: 100%;                /* Fließtext über die volle Breite */
 }
 
+/* Liste und Pro-Tipps sind gleich weit eingerückt */
+.article-list,
+.pro-tips {
+  width: 100%;
+  max-width: 1040px;
+}
+
 .article-list {
   display: flex;
   flex-direction: column;
   gap: var(--gap-s);
 }
 
-.article-content li {
-  margin-bottom: 8px;
-}
-
 /* --- Pro Tipps --- */
 
 .pro-tips {
   position: relative;
-  width: 878px;
+  margin: var(--gap-m) 0;         /* extra Abstand zu Liste und Folgetext */
   padding: 48px 32px 24px;
   border-radius: var(--radius-l);
   background-color: var(--color-green-light);
@@ -223,13 +242,15 @@
 }
 
 .share-action {
-  display: flex;
-  align-items: flex-end;
-  gap: var(--gap-s);
+  position: relative;   /* Bezugspunkt für den Pfeil -> Button bleibt mittig */
 }
 
 .share-arrow {
+  position: absolute;
+  right: 100%;
+  bottom: 50%;
   width: 80px;
+  margin-right: 8px;
 }
 
 .share-button {

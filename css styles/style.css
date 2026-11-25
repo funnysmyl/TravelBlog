@@ -577,6 +577,10 @@ figure > img {
   align-items: center;
 }
 
+.contact-header > div > p {
+  
+}
+
 form > div {
   display: flex;
   flex-direction: column;
