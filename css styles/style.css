@@ -262,6 +262,11 @@
     transform: rotate(360deg);
   }
 }
+.cappadocia-pic{
+ display: flex;
+ justify-content: end;
+ align-items: end;
+}
 
 /* --- HIGHLIGHTS --- */
 .highlights {
